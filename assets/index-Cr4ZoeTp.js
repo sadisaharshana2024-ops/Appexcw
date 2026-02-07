@@ -345,8 +345,10 @@ Error generating stack: `+a.message+`
         }
         @media (max-width: 768px) {
           .shimmer-text {
-            background: white;
-            -webkit-text-fill-color: white;
+            background: none;
+            -webkit-background-clip: initial;
+            -webkit-text-fill-color: initial;
+            color: white;
             animation: none;
             filter: none;
           }
@@ -1119,7 +1121,7 @@ Error generating stack: `+a.message+`
           color: #aaa;
           font-weight: 400;
         }
-      `})]})};function BT(){const[i,l]=Y.useState("home"),[o,u]=Y.useState(null),[c,h]=Y.useState(!0);Y.useEffect(()=>{const g=setTimeout(()=>{h(!1)},1200);return()=>clearTimeout(g)},[]);const d=g=>{u(g),l("product")},y=()=>{l("home"),u(null)};return S.jsxs("div",{className:"App",children:[S.jsx(v2,{mode:"wait",children:c&&S.jsx(UT,{},"loading")}),!c&&S.jsxs(S.Fragment,{children:[S.jsx(_T,{}),S.jsx(DT,{}),i==="home"?S.jsxs(S.Fragment,{children:[S.jsx(CT,{}),S.jsx(jT,{onProductSelect:d}),S.jsx(OT,{}),S.jsx(RT,{})]}):S.jsx(NT,{product:o,onBack:y}),S.jsx(VT,{}),S.jsx("a",{href:"https://wa.me/94776209693",target:"_blank",rel:"noopener noreferrer",className:"whatsapp-float",children:S.jsx("img",{src:"https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg",alt:"WhatsApp"})}),S.jsx("a",{href:"https://maps.app.goo.gl/d4kLsYxsMK1yeF7k9",target:"_blank",rel:"noopener noreferrer",className:"location-float",children:S.jsx("img",{src:"https://upload.wikimedia.org/wikipedia/commons/a/aa/Google_Maps_icon_%282020%29.svg",alt:"Location"})})]}),S.jsx("style",{"padding-left":"0",children:`
+      `})]})};function BT(){const[i,l]=Y.useState("home"),[o,u]=Y.useState(null),[c,h]=Y.useState(!0);Y.useEffect(()=>{const g=setTimeout(()=>{h(!1)},2500);return()=>clearTimeout(g)},[]);const d=g=>{u(g),l("product")},y=()=>{l("home"),u(null)};return S.jsxs("div",{className:"App",children:[S.jsx(v2,{mode:"wait",children:c&&S.jsx(UT,{},"loading")}),!c&&S.jsxs(S.Fragment,{children:[S.jsx(_T,{}),S.jsx(DT,{}),i==="home"?S.jsxs(S.Fragment,{children:[S.jsx(CT,{}),S.jsx(jT,{onProductSelect:d}),S.jsx(OT,{}),S.jsx(RT,{})]}):S.jsx(NT,{product:o,onBack:y}),S.jsx(VT,{}),S.jsx("a",{href:"https://wa.me/94776209693",target:"_blank",rel:"noopener noreferrer",className:"whatsapp-float",children:S.jsx("img",{src:"https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg",alt:"WhatsApp"})}),S.jsx("a",{href:"https://maps.app.goo.gl/d4kLsYxsMK1yeF7k9",target:"_blank",rel:"noopener noreferrer",className:"location-float",children:S.jsx("img",{src:"https://upload.wikimedia.org/wikipedia/commons/a/aa/Google_Maps_icon_%282020%29.svg",alt:"Location"})})]}),S.jsx("style",{"padding-left":"0",children:`
         .whatsapp-float {
           position: fixed;
           bottom: 100px; /* Moved up to make room for location */

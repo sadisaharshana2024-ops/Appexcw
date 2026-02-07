@@ -902,8 +902,8 @@ Error generating stack: `+a.message+`
       `})]})},MT=()=>{const[i,l]=k.useState(!1),o=k.useRef(null),u=()=>{o.current&&(i?o.current.pause():o.current.play().catch(c=>{console.error("Playback failed:",c)}),l(!i))};return k.useEffect(()=>{o.current&&(o.current.volume=.5)},[]),S.jsxs(S.Fragment,{children:[S.jsx("div",{className:`music-container ${i?"playing":""}`,children:S.jsx(Gt.button,{className:"music-toggle-btn",onClick:u,initial:{opacity:0,scale:.8},animate:{opacity:1,scale:1},whileHover:{scale:1.1},whileTap:{scale:.95},transition:{type:"spring",stiffness:300,damping:20},children:i?S.jsxs("svg",{className:"music-icon",viewBox:"0 0 24 24",fill:"none",xmlns:"http://www.w3.org/2000/svg",children:[S.jsx("rect",{x:"6",y:"4",width:"4",height:"16",rx:"1",fill:"currentColor"}),S.jsx("rect",{x:"14",y:"4",width:"4",height:"16",rx:"1",fill:"currentColor"})]}):S.jsxs("svg",{className:"music-icon",viewBox:"0 0 24 24",fill:"none",stroke:"url(#neon-gradient)",strokeWidth:"2.5",strokeLinecap:"round",strokeLinejoin:"round",xmlns:"http://www.w3.org/2000/svg",children:[S.jsxs("defs",{children:[S.jsxs("linearGradient",{id:"neon-gradient",x1:"0%",y1:"0%",x2:"100%",y2:"100%",children:[S.jsx("stop",{offset:"0%",stopColor:"#00dbde"}),S.jsx("stop",{offset:"100%",stopColor:"#fc00ff"})]}),S.jsxs("filter",{id:"neon-glow",x:"-50%",y:"-50%",width:"200%",height:"200%",children:[S.jsx("feGaussianBlur",{stdDeviation:"2",result:"coloredBlur"}),S.jsxs("feMerge",{children:[S.jsx("feMergeNode",{in:"coloredBlur"}),S.jsx("feMergeNode",{in:"SourceGraphic"})]})]})]}),S.jsx("path",{d:"M9 18V5l12-2v13",filter:"url(#neon-glow)"}),S.jsx("circle",{cx:"6",cy:"18",r:"3",stroke:"url(#neon-gradient)",filter:"url(#neon-glow)"}),S.jsx("circle",{cx:"18",cy:"16",r:"3",stroke:"url(#neon-gradient)",filter:"url(#neon-glow)"})]})})}),S.jsxs("audio",{ref:o,loop:!0,children:[S.jsx("source",{src:"/products/Hans Zimmer - Cornfield Chase.mp3",type:"audio/mpeg"}),"Your browser does not support the audio element."]}),S.jsx("style",{children:`
                 .music-container {
                     position: fixed;
-                    bottom: 170px;
-                    right: 30px;
+                    bottom: 30px;
+                    left: 30px;
                     z-index: 9999;
                     display: flex;
                     align-items: center;
@@ -1007,8 +1007,8 @@ Error generating stack: `+a.message+`
 
                 @media (max-width: 768px) {
                     .music-container {
-                        bottom: 150px;
-                        right: 20px;
+                        bottom: 20px;
+                        left: 20px;
                     }
                     .music-toggle-btn {
                         width: 50px;
